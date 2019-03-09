@@ -1,0 +1,27 @@
+[
+    {
+        "city": "London",
+        "title": "Why so Foggy",
+        "description": "People described the sight as amazing, although some said they found the sky's shade creepy.", 
+        "imageUrl": "https://images.unsplash.com/photo-1438893254896-34a5db3e4a8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+    },
+    {
+        "city": "Sydney",
+        "title": "The Land Down Under!",
+        "description": "I met a strange lady, she made me nervous Shetook me in and gave me breakfast And she said Do you come from a land down under?",
+        "imageUrl": "https://images.unsplash.com/photo-1523428096881-5bd79d043006?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+    },
+    {
+        "city": "San Francisco",
+        "title": "They Dont Call it Golden State for Nothing",
+        "description": "Believe it or not, fall offers some of the city's warmest temperatures year-round, not to mention fewer crowds than summer.",
+        "imageUrl": "https://images.unsplash.com/photo-1465158061415-2deb87b7484b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+    },
+    {
+        "city": "Seattle",
+        "title": "You must visit",
+        "description": "Seattle is an exciting urban city surrounded by unmatched natural beauty. Adventure awaits you.",
+        "imageUrl": "https://images.unsplash.com/photo-1516436704726-ee66d69374b4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+    }
+]
+

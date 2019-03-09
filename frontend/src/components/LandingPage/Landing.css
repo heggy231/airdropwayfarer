@@ -1,0 +1,38 @@
+#landing-page-flex {
+    background-image: url('https://media.giphy.com/media/l4pSXj7dzD855T6ec/giphy.gif');
+   background-size: cover;
+    /* transform: translate(50%, 50%); */
+    height: 100vh;
+    /* width: 100vw; */
+    display:flex;
+    margin: 0 auto;
+    /* flex direction default is row so set it column */
+    flex-direction: column;
+    /* text is center */
+    justify-content: center;
+    align-items: center;
+  }
+  .top-level-wrapper-flex {
+    display:flex;
+    flex-direction: column;
+    background-color: azure;
+    opacity: 0.6;
+    width: 30em;
+    height: 15em;
+    border-radius: 20px;
+  }
+
+  .subHeader{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .container{
+    display: flex;
+    justify-content: space-evenly; 
+  }
+
+  button{
+  font-size: 20px;
+  }

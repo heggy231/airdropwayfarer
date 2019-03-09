@@ -1,0 +1,108 @@
+.container{
+    display:flex;
+    justify-content: space-between;
+    /* margin: 20px; */
+    /* flex-direction: column; */
+    width: 100%;
+    background-color: grey;
+    align-content: center;
+    justify-content: center;
+   
+}
+
+/* Styling for Profile & CityList */
+.ppp-1{
+
+ width:50% ;
+ margin: 0 30px 0 0;
+ background-color: blue;
+}
+
+.profileContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    height: 250px;
+    margin: 0 0 10px 0;
+}
+.profileAvator{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.cityContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: navajowhite;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.cityContainer button{
+    background: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    width: 110%;
+    height: 110%;
+    margin:5px;
+    font-size: 15px;
+    text-justify: center;
+    border-radius: 20px;
+    
+}
+.cityContainer button img{
+    width: 50px;
+    height: 50px;
+    margin : 0 30px 0 0;
+    border-radius: 50px;
+    
+}
+.cityContainer button h5{
+    font-size: 130%;
+}
+
+
+
+
+
+/* Styling for SearchContainer & PostList */
+.col-2{
+    width: 50%;
+    float: right;
+    /* margin : 0 0 0 30px; */
+    background-color: pink;
+    
+}
+
+.searchContainer{
+    background-color: green;
+    height: 250px;
+    margin: -30px 0 10px 0;
+    
+}
+.searchContainerButton{
+
+    display: flex;
+    justify-content: space-evenly; 
+}
+.postContainer{
+    background-color: purple;
+    height: 300px;
+    overflow-y: scroll;
+
+}
+
+
+
+
+
+
+
+
+
+
+

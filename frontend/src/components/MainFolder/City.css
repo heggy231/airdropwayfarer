@@ -1,0 +1,9 @@
+
+button{
+    display: flex;
+    flex-direction: column;
+}
+button img{
+    width: 80px;
+    height: 80px;
+}
