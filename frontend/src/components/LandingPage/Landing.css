@@ -33,7 +33,7 @@
     justify-content: space-evenly; 
   }
 
-  button{
+  .landingContainer button{
     font-size: 20px;
     border-radius: 20px;
     color: teal;
