@@ -28,11 +28,11 @@ App
 └──  Landing
 ```
 ## Repo of Different Versions of AirDrop Farer:
-[version1](https://github.com/heggy231/New-Fullstack-WayfarerV1)
+[Version1](https://github.com/heggy231/New-Fullstack-WayfarerV1)
 
-[version2](https://github.com/heggy231/New-FullStack-V2)
+[Version2](https://github.com/heggy231/New-FullStack-V2)
 
-[version3](https://github.com/heggy231/airdropwayfarer)
+[Version3 Final](https://github.com/heggy231/airdropwayfarer)
 
 ## Challenge as a Team:
 - Team (overall): 
@@ -71,4 +71,7 @@ npm install
 cd /backend
 npm install bcrypt
 npm install 
+cd backend
+cd db
+node seed.js // seed the database
 ```
