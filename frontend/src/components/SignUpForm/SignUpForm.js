@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
-
-import './SignUpForm.css'
+import '../LandingPage/Landing.css'
+// import '../LogInForm/LogInForm.css'
 
 class SignUpForm extends Component {
   render () {
     return (
-      <div>
-        <h2>Sign Up</h2>
+      <div className="signUpForm">
+        {/* <h2>Sign Up</h2> */}
 
         <form>
 
-        <div>
+        <div >
             <label htmlFor='name'>Name</label>
             <input type='text' name='name' onChange={this.props.handleInput} />
           </div>
@@ -21,10 +21,10 @@ class SignUpForm extends Component {
             <input type='text' name='email' onChange={this.props.handleInput} />
           </div>
 
-          <div>
+          {/* <div>
             <label htmlFor='date'>Today's Date</label>
             <input type='date' name='joindate' onChange={this.props.handleInput} />
-          </div>
+          </div> */}
 
           <div>
             <label htmlFor='password'>Password</label>

@@ -23,7 +23,8 @@ class App extends Component {
       email: '',
       password: '',
       isLoggedIn: false,
-      user: null
+      user: null,
+      postbyCityName:[]
     }
 
   componentDidMount () {
@@ -122,19 +123,122 @@ class App extends Component {
 //   })
 // }
 
+// //--------------Get Request for individual City---------------
+// //--------------Connected to different City Buttons
+// //This brings back Specific City Post
+// onClick = (e) => {
+//   console.log('This is London')
+//       e.preventDefault()
+//       axios.get(`http://localhost:3001/api/cityposts`)
+//       .then(res =>{
+//           console.log(res.data)
+//           let postdata = res.data
+//           //if user id is equal to current
+//           if (postdata.length > 0){
+//               // let userId = localStorage.userId.toString()
+//               // let selectedcity = this.state.test.city1
+//               var individualcity = postdata.filter(function (post) {
+//                   return post.city === "London"; //need to retrieve by userid
+//                 });
+                
+//           }
+//           this.setState({
+//             postbyCityName:individualcity
 
+//           });
+//           console.log('--------London post-------')
+//           console.log(this.state.postbyCityName)
+//       })
+//       .catch(
+//           error =>{
+//               console.log('Error:', error);
+//           }
+//       );
+
+//       //We shoul try to map the
+  
+// }
+
+
+
+
+
+
+//--------------Get Request for individual User---------------
+//--------------Connected to Mine Button -------
+//This brings back Specific Users Post
+    onClick = (e) => {
+      console.log('It worksss')
+          e.preventDefault()
+          axios.get(`http://localhost:3001/api/cityposts`)
+          .then(res =>{
+              console.log(res.data)
+              let postdata = res.data
+              //if user id is equal to current
+              if (postdata.length > 0){
+                  let userId = localStorage.userId.toString()
+                  var usersposts = postdata.filter(function (post) {
+                      return post.user === userId ; //need to retrieve by userid
+                    });
+                    
+              }
+              this.setState({
+                postbyUser:usersposts
+
+              });
+              console.log('--------Userpost-------')
+              console.log(this.state.postbyUser)
+          })
+          .catch(
+              error =>{
+                  console.log('Error:', error);
+              }
+          );
+
+          //We shoul try to map the
+      
+  }
   
 
 
 // ------------------In Render Method---------------------
   render () {
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //// ------------------In Return ---------------------
     return (
+      //---------------First Chilsd
       <div>
         <NavBar isLoggedIn={this.state.isLoggedIn} handleLogOut={this.handleLogOut} />
         <div className='body'>
+
+
+
+
+{/* ---------------------Second Child----------------------------- */}
+
           <Switch>
+
+
+            
             <Route
               path='/postList'
               render={() => {
@@ -143,6 +247,10 @@ class App extends Component {
                 )
               }}
             />
+
+
+
+
 {/* ------------------Landing Page---------------------- */}
             <Route
               exact path='/'
@@ -161,7 +269,7 @@ class App extends Component {
               path='/main'
               render={() => {
                 return (
-                  <Main keepUserInfo={this.state.keepUserInfo} />
+                  <Main onClick ={this.onClick} keepUserInfo={this.state.keepUserInfo} />
                 )
               }}
             />

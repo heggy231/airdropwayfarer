@@ -1,26 +1,18 @@
 import React, { Component } from 'react'
-
+import '../LandingPage/Landing.css'
 import './LogInForm.css'
 
 class LogInForm extends Component {
   render () {
     return (
       <div>
-        <h2>Log In</h2>
+        {/* <h2>Log In</h2> */}
 
         <form>
-          <div>
+          <div className="loginForm">
             <label htmlFor='email'>Email</label>
             <input type='text' name='email' onChange={this.props.handleInput} />
           </div>
-
-
-
-          <div>
-            <label htmlFor='email'>Join Date</label>
-            <input type='date' name='joindate' onChange={this.props.handleInput} />
-          </div>
-
 
           <div>
             <label htmlFor='password'>Password</label>

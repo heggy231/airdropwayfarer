@@ -10,10 +10,14 @@ class City extends Component {
   render () {
     return (
       <div className='cityContainer'>
-      <button><img src={london}/><h5>London</h5></button>
-      <button><img src={sydney}/><h5>Sydney</h5></button>
-      <button><img src={sanfrancisco}/><h5>San Francisco</h5></button>
-      <button><img src={seattle}/><h5>Seattle</h5></button>
+      <button className={this.props.test.city0} onClick ={this.props.onAllClick} >{this.props.test.city0}</button>
+
+      
+      <button className={this.props.test.city1} onClick ={this.props.onClick} >{this.props.test.city1}</button>
+      <button className={this.props.test.city2} onClick ={this.props.onClick} >{this.props.test.city2}</button>
+
+      <button className={this.props.test.city3} onClick ={this.props.onClick} >{this.props.test.city3}</button>
+      <button className={this.props.test.city4} onClick ={this.props.onClick} >{this.props.test.city4}</button>
    
       </div>
     )
@@ -21,3 +25,9 @@ class City extends Component {
 }
 
 export default City;
+
+
+// <img src={london}/>
+// <img src={sydney}/>
+// <img src={sanfrancisco}/>
+// <img src={seattle}/>

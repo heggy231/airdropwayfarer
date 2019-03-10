@@ -78,13 +78,7 @@ class AddPost extends Component {
     
     
     //Now we need the method handling the submitting of the form
-    onSubmit = (e) => {
-      // console.log(`Form submitted:`)
-      // console.log(`Post City: ${this.state.city}`)
-      // console.log(`Post Title: ${this.state.title}`)
-      // console.log(`Post Description: ${this.state.description}`)
-      // console.log(`Post Url: ${this.state.imageUrl}`)
-  
+    onSubmit = (e) => { 
       e.preventDefault()
       axios({
         method: 'post',
@@ -99,21 +93,8 @@ class AddPost extends Component {
         })
         .then( response => {
           console.log(response)
-  
-  
-  
-          
-          // this.setState ({
-          //   city: "",
-          //   title: "",
-          //   description: "",
-          //   imageUrl: "",
-          //   completed: false
-      
-          // })
         })
         .catch(err => console.log(err))
-       
         // reset all keys in this.setState to empty string as it was initially
   
   
@@ -127,10 +108,12 @@ class AddPost extends Component {
           <button variant="primary" onClick={this.handleShow}>
             Add Post
           </button>
-  
+          
           <Modal  
+          // style={{padding: 10, width: 460 , height: 400}}
             show={this.state.show}
             onSubmit={this.handleHide}
+            // onClick={this.handleHide}
             dialogClassName="modal-300w"
             aria-labelledby="example-custom-modal-styling-title-vcenter"
             // {...this.props}
@@ -139,6 +122,8 @@ class AddPost extends Component {
             // centered
             
           >
+         {/* <button onClick={this.handleHide}/>  */}
+         <button onClick={this.handleHide}><i class="far fa-window-close"></i></button>
             {/* <Modal.Header closeButton>
             <h6>Create New Post</h6>
               <Modal.Title id="example-custom-modal-styling-title">
@@ -146,14 +131,14 @@ class AddPost extends Component {
               </Modal.Title>
             </Modal.Header> */}
 
+         
 
-
-            <Modal.Body style={{padding: 60}} >
+            <Modal.Body  style={{padding: 10}} >
                     <div style={{marginTop: 20}}>
-                
+               
                     <h4 style={{textAlign: "center"}}>Create New Post</h4>
                 <form onSubmit={this.onSubmit}>
-
+                
                     {/* <div className='form-group'>
 
                         <div className="form-check form-check">
@@ -255,17 +240,17 @@ class AddPost extends Component {
                     
                     </div>
                         
-                    <button onSubmit={this.handleHide}  style={{textAlign: "center"}} ><input type='submit' value='Create Post'  className="btn btn-primary" /></button>
-
+                    <button   onSubmit={this.handleHide} ><input type='submit' value='Create Post'  className="btn btn-primary" /></button>
+                    
                 </form>
-                
+               
                 </div>
             </Modal.Body>
             <div>
                 
             </div>
 
-            
+             
           </Modal>
         </div>
       );

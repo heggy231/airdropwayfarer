@@ -1,32 +1,66 @@
-.container{
+/* .container{
     display:flex;
     justify-content: space-between;
-    /* margin: 20px; */
-    /* flex-direction: column; */
+
     width: 100%;
     background-color: grey;
     align-content: center;
     justify-content: center;
    
-}
+} */
 
 /* Styling for Profile & CityList */
-.ppp-1{
+/* .ppp-1{
 
  width:50% ;
  margin: 0 30px 0 0;
  background-color: blue;
-}
+} */
 
+
+html{
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba(245,245,220 , .1)
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 100vw;
+    height: 100vh;
+    
+}
+.ppp-1{
+   float :left;
+    width:25% ;
+    /* margin: 0 30px 0 0;
+    background-color: blue; */
+   } 
 .profileContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    /* background-color: rgba(231, 207, 147 ,.5); */
+    
     height: 250px;
     margin: 0 0 10px 0;
 }
+.profileContainer button{
+    border-radius: 30px;
+    background-color: rgba(66, 48, 3, 0.5);
+    
+}
+.profileContainer button:hover{
+    box-shadow: 2px 2px #888888;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 .profileAvator{
     width:100px;
     height: 100px;
@@ -35,7 +69,7 @@
 .cityContainer{
     display: flex;
     flex-direction: column;
-    background-color: navajowhite;
+    /* background-color: navajowhite; */
     height: 300px;
     align-items: center;
     justify-content: center;
@@ -43,7 +77,7 @@
 
 }
 .cityContainer button{
-    background: blanchedalmond;
+    background: rgba(0, 128, 128 , .9);
     display: flex;
     flex-direction: row;
     width: 110%;
@@ -53,6 +87,10 @@
     text-justify: center;
     border-radius: 20px;
     
+}
+ .cityContainer button:hover{
+    box-shadow: 2px 2px #888888;
+    background-color:rgba(255,222,173,.3);
 }
 .cityContainer button img{
     width: 50px;
@@ -71,31 +109,88 @@
 
 /* Styling for SearchContainer & PostList */
 .col-2{
-    width: 50%;
+    width: 75%;
     float: right;
     /* margin : 0 0 0 30px; */
-    background-color: pink;
+    /* background-color: pink; */
+    height: 100%;
     
 }
 
 .searchContainer{
-    background-color: green;
-    height: 250px;
+    background-image: url('https://media.giphy.com/media/SLpDFnzFcoGRE3xCQr/giphy.gif');
+   background-size: cover;
+     height: 250px;
     margin: -30px 0 10px 0;
-    
+    background-color: teal;
+    border-radius: 20px;    
+    background-color: azure;
+    opacity: 0.8;
+   
+}
+.searchContainer h1{
+    padding-top: 60px;
+    color:black;
+    font-weight: bold;
+    letter-spacing: 13px;
+    /* background-color: azure;
+    opacity: 0.6; */
+}
+.searchContainerButton button{
+    text-align: center;
+    border-radius: 30px;
 }
 .searchContainerButton{
-
+    padding-top: 20px;
     display: flex;
     justify-content: space-evenly; 
+   
 }
 .postContainer{
-    background-color: purple;
-    height: 300px;
+    /* background-color: purple; */
+    height: 80%;
     overflow-y: scroll;
+    
 
 }
+.postTemplate{
+    border: 3px solid black;
+    margin: 15px;
+    border-radius: 20px;
+    background-color:  rgba(255,222,173,.3);
+}
+.postTemplate img{
+    float: left;
+    margin-left: 15px;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+ }
+ .postDetails{
+     display: flex;
+     /* justify-content: space-between; */
+     align-content: left;
+    
+ }
+ .postDescription{
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     /* background-color: #fff; */
+     padding: 0;
+     margin:0;
+ }
 
+
+
+ .postDetails h4{
+    font-size: 30px; 
+ }
+.flex-btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
 
 
 
