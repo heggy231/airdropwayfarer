@@ -13,13 +13,13 @@ class Landing extends Component{
                          <div className="top-level-wrapper-flex">
 
                         <div id="top-level">
-                            <h1>Wayfarer</h1>
+                            <h1>AirDrop Farer</h1>
                         </div>
 
                         <div id="subHeader">
                             {/* <h2>Visit places and Post your experiences</h2> */}
 
-                            <div className="container">
+                            <div className="landingContainer">
                                 <Link to="/Login"><button>Login </button></Link>
                                 <Link to="/SignUp"><button>SignUp</button></Link>
                             </div>

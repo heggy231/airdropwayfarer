@@ -68,10 +68,10 @@ npm install
 ```
 - backend: runs on http://localhost:3001/
 ```
-cd /backend
-npm install bcrypt
-npm install 
-cd backend
-cd db
-node seed.js // seed the database
+#### backend ########################
+> `npm install`  // pulling down from master install the dependencies require for the project `npm i` also same
+> `npm install bcrypt --save`
+> `mongod` is running in a tab of Terminal.
+> 'node db/seed.js' and make sure to require our models folder at the top.
+> `nodemon` // test if express is working
 ```
