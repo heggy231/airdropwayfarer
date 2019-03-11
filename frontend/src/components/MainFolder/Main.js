@@ -6,7 +6,6 @@ import PostList from '../PostList/PostList';
 import axios from 'axios'
 import Post from '../PostDisplay/Post'
 import City from './City';
-
 import './Main.css'
 
 class Main extends Component{
@@ -24,7 +23,6 @@ class Main extends Component{
       postbyCityName:[],
       postbyUser:[]
     }
-
 
 //  //----------------GEt Method (City Post) --------------------------   
 // //GEt Method to to obtain all of the posts--------------
@@ -50,20 +48,7 @@ class Main extends Component{
     );
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
 //--------------------By User-----------------
-  
 onMyClick = (e) =>{
   e.preventDefault()
   const name = `${e.target.innerHTML}`
@@ -104,8 +89,6 @@ onMyClick = (e) =>{
         }
     );
 
-
-
   }
   else {
     console.log("We got work to do")
@@ -113,27 +96,7 @@ onMyClick = (e) =>{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //---------------------Working Get City------------------------------
-
 //I neeed a switch statement
   
 onClick = (e) =>{
@@ -175,47 +138,13 @@ onClick = (e) =>{
             console.log('Error:', error);
         }
     );
-
-
-
   }
   else {
     console.log("We got work to do")
   }
-
 }
 
 //---------------------Working Get City------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //--------------Get Request for individual City---------------
