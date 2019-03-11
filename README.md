@@ -39,10 +39,16 @@ App
 ## Challenge as a Team:
 - Team (overall): 
   - Restructuring our file system: We overhauled our file system for props to flow better.
-  - 
+  - Task delineation due to code not being up on Github
+  - Making the AirDrop Farer serve on localhost
+  - Gaps in technical knowledge, discovering what we didn't know
   
 ## Challenge as individual:
 - Darnell:
+  - Delineating tasks to team members
+  - Understanding with how frontend connects with backend
+  - Managing state and passing props down
+
 
 - Heggy:
   - Routing vs passing props using state
@@ -50,17 +56,19 @@ App
   - Running the backend and frontend together
 
 - Ghenet:
+  - Making components communicate (setting and managing state)
+  - Backend
 
 ## Lessons Learned (Personal area of growth, Working with a team):
 - Personal area of growth: 
   - Heggy: Express routing, React State, Local storage
-  - Darnell: 
-  - Ghenet:
+  - Darnell: Creating CRUD functionalities, managing state, task management (breaking down challenges into manageable tasks)
+  - Ghenet: How to utilize local storage, learn about setting and managing state, learned about task management
   
 - Working with a team:
   - Heggy: Communicating with team better
-  - Darnell: 
-  - Ghenet:
+  - Darnell: Giving more specific and constructive in the moment feedback
+  - Ghenet: Communicating with team better, Learned that working in a team is better, Healthy team means complimenting each other's strengths.
 
 ## How to run AirDrop Farer React app:
 - frontend: runs on http://localhost:3000/
