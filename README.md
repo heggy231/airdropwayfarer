@@ -1,4 +1,6 @@
 # <img src="https://cdn.glitch.com/cb093bfd-142f-45b3-bdb4-52ff49e0a1c2%2Fpack.jpg?1551768465967" height="60">AirDrop Farer
+
+<img src="https://cdn.glitch.com/cb093bfd-142f-45b3-bdb4-52ff49e0a1c2%2FScreen%20Shot%202019-03-10%20at%205.13.06%20PM.png?1552263258270">
 App for users to share tips (AKA posts) about their favorite locations around the world.
 
 ## Technology Used:
@@ -74,4 +76,8 @@ npm install
 > `mongod` is running in a tab of Terminal.
 > 'node db/seed.js' and make sure to require our models folder at the top.
 > `nodemon` // test if express is working
+```
+
+```
+https://media.giphy.com/media/ZI9yBW6pTpJOE/giphy.gif
 ```
