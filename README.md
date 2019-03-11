@@ -45,7 +45,6 @@ App
   
 ## Challenge as individual:
 - Darnell:
-  - Delineating tasks to team members
   - Understanding with how frontend connects with backend
   - Managing state and passing props down
 
