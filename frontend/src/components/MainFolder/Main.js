@@ -24,9 +24,6 @@ class Main extends Component{
       postbyCityName:[],
       postbyUser:[]
     }
-   
-   
-
 
 
 //  //----------------GEt Method (City Post) --------------------------   
